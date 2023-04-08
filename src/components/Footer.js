@@ -1,7 +1,15 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 const Footer = () => {
-  return <h4>footer</h4>
+  return (
+    <Wrapper>
+      <h5>&copy; {new Date().getFullYear()}
+       <span>comfySloth</span>
+      </h5>
+      <h4>footer</h4>
+      <h5>All rights reserved</h5>
+    </Wrapper>
+  ) 
 }
 
 const Wrapper = styled.footer`
@@ -28,4 +36,4 @@ const Wrapper = styled.footer`
   }
 `
 
-export default Footer
+export default Footer;
