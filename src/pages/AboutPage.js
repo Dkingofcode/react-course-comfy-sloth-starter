@@ -1,7 +1,7 @@
-import React from 'react'
-import styled from 'styled-components'
-import { PageHero } from '../components'
-import aboutImg from '../assets/hero-bcg.jpeg'
+import React from 'react';
+import styled from 'styled-components';
+import { PageHero } from '../components';
+import aboutImg from '../assets/hero-bcg.jpeg';   
 
 const AboutPage = () => {
   return(
@@ -14,11 +14,12 @@ const AboutPage = () => {
         <div className='title'>
           <h2>our Story</h2>
           <div className='underline'></div>
+          </div>
           <p>Lorem ipsum doloe eit emastn erokci 
             dgtdbjkd  erouio xjrqryqwe nbchixm jshjkdksom djbsjs 
             cjuskdokdn xn hsn dmd cjndjsgtsmxcklwdijwnju juwuuuw xhgwyhwus  
-            fgwheroue tyioetyw wtrejngc votroe ryerpkiucn rgyreegven  duj</p>
-        </div>
+            fgwheroue tyioetyw wtrejngc votroe ryerpkiucn rgyreegven  duj.
+            </p>
        </article>
      </Wrapper>
      </main> 

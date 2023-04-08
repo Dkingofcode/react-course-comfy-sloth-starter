@@ -15,6 +15,10 @@ import {
 
 const initialState = {
   isSidebarOpen : false,
+  products_loading: false,
+  products_error: false,
+  products: [],
+  featured_products: [],
 }
 
 const ProductsContext = React.createContext()
@@ -31,8 +35,14 @@ export const ProductsProvider = ({ children }) => {
        dispatch({ type: SIDEBAR_CLOSE })
    }
 
+   const fetchData = async (url) => {
+    const response = await axios.get(url)
+    console.log(response) 
+   }
+
   useEffect(() => {
-    openSidebar()
+    fetchData()
+    //openSidebar()
   });
   
    return (

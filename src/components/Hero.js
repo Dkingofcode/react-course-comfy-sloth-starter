@@ -5,7 +5,22 @@ import heroBcg from '../assets/hero-bcg.jpeg'
 import heroBcg2 from '../assets/hero-bcg-2.jpeg'
 
 const Hero = () => {
-  return <h4>hero</h4>
+  return (
+      <Wrapper className='section-center'>
+       <article className='content'>
+        <h1>
+          design your <br />
+          comfort zone
+        </h1>
+        <p>Lorem ipsum door sit amet 
+          pelerewnmb bretuih drehenderit yurew swero dravert 
+          fority gertwing coplarbretw dortfiyus brohnmer tyqwer fioert 
+          viershjd cjnksod juene jxuuwnw proue looeyhye weqyhe  jsygw  sgyywbw sytywgwb 
+        </p>
+        </article> 
+      <h4>hero</h4>
+      </Wrapper>
+  )
 }
 
 const Wrapper = styled.section`
@@ -70,4 +85,4 @@ const Wrapper = styled.section`
   }
 `
 
-export default Hero
+export default Hero;
