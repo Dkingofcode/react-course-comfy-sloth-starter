@@ -38,6 +38,11 @@ export const FilterProvider = ({ children }) => {
    useEffect(() => {
       dispatch({ type: LOAD_PRODUCTS, payload: products })
    }, [products])
+ 
+   useEffect(() => {
+    dispatch({ type: FILTER_PRODUCTS })
+    dispatch({ type: SORT_PRODUCTS })
+   }, [products, state.sort, state.filters])
 
    const setGridView = () => {
     dispatch({ type: SET_GRIDVIEW })
@@ -58,6 +63,10 @@ export const FilterProvider = ({ children }) => {
    const updateFilters = (e) => {
     let name = e.target.name
     let value = e.target.value
+   }
+
+   const clearFilters = () => {
+
    }
 
   return (
